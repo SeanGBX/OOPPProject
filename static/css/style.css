@@ -1,3 +1,7 @@
-body {
-    background-color: grey;
+body{
+    background-color: white;
+}
+h1{
+    padding-top: 50px;
+    padding-left: 20px;
 }

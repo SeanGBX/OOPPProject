@@ -1,9 +1,5 @@
 {% extends "layouts.html" %}
+<title>Home</title>
 {% block body %}
-{% if user %}
-    <h1>Welcome back {{ user }}</h1>
-{% else %}
-    <h1>Log in to view your profile</h1>
-    <button type="button" href="/Hi">Register</button>
-{% endif %}
+<h1>Home</h1>
 {% endblock %}
