@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark justify-content-center">
-        <a class="navbar-brand" href="#"><img src="../../static/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">SmartRumble</a>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark justify-content-center" id="navbar">
+        <a class="navbar-brand" href="/"><img src="../../static/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">SmartRumble</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/">Overview</a>
+              <a class="nav-link" href="/overview">Overview</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/expiration">Expiration</a>
@@ -15,9 +15,16 @@
               <a class="nav-link" href="/expenditure">Expenditure</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/profile/user">Profile</a>
+              <a class="nav-link" href="/profile">Profile</a>
             </li>
           </ul>
+          <div class="navbar-item">
+              {% if session["logged_in"] == True %}
+              <a class="nav-link" href="/logout">Logout</a>
+              {% else %}
+              <a class="nav-link" href="/login">Sign in / Sign Up</a>
+              {% endif %}
+          </div>
         </div>
 </nav>
 

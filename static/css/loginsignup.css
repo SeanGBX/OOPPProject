@@ -1,0 +1,44 @@
+body {
+    padding-top: 90px;
+}
+#loginsignup {
+    padding: auto;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-register {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.active {
+    color: darkblue;
+    font-weight: bold;
+}
+.col a {
+    text-decoration: none;
+}
+.col a:hover {
+    opacity: 0.5;
+}
+.active:hover {
+    color: darkblue;
+}
+.error {
+    text-align: center;
+}
