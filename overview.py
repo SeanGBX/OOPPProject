@@ -3,6 +3,8 @@ from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from functools import wraps
+import pygal
+from pygal.style import Style
 
 app = Flask(__name__)
 app.secret_key = "keys"
@@ -31,7 +33,55 @@ def home():
     return render_template("home.html")
 
 @app.route("/overview")
+@login_required
 def overview():
+    custom_style = Style(
+        background="transparent",
+        plot_background="#FFFFFF",
+        foreground="#FFFFFF"
+    )
+    #Food Expenditure Pie Chart
+    pie_chart = pygal.Pie(style=custom_style)
+    pie_chart.show_legend = False
+    pie_chart.title = "Food Expenditure"
+    pie_chart.add({
+        "title" : "Allowance left",
+    },[{
+        "value": 50 - 23,
+        "xlink" : {"href": "/expenditure"}
+    }])
+    pie_chart.add({
+        "title": "Spent",
+    }, [{
+        "value": 23,
+        "xlink": {"href": "/expenditure"}
+    }])
+    pie_chart.render_to_file("static/img/chart.svg")
+    # Calorie Intake Pie Chart
+    pie_chart2 = pygal.Pie(style=custom_style)
+    pie_chart2.show_legend = False
+    pie_chart2.title = "Caloric Intake"
+    pie_chart2.add({
+        "title": "Breakfast",
+    }, [{
+        "value": 500,
+        "xlink": {"href": "/expiration"}
+    }])
+    pie_chart2.add({
+        "title": "Lunch",
+    }, [{
+        "value": 700,
+        "xlink": {"href": "/expiration"}
+
+    }])
+    pie_chart2.add({
+        "title": "Dinner",
+    }, [{
+        "value": 1300,
+        "xlink": {"href": "/expiration"}
+
+    }])
+    pie_chart2.render_to_file("static/img/chart2.svg")
     return render_template("overview.html")
 
 class RegisterForm(Form):
@@ -114,6 +164,7 @@ def user():
     return render_template("profile.html")
 
 @app.route("/profile/<user>")
+@login_required
 def profile(user = None):
     return render_template("profile.html", user=user)
 

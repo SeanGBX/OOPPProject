@@ -1,5 +1,16 @@
 {% extends "layouts.html" %}
 {% block head %}
 {{ super() }}
+<link rel="stylesheet" type="text/css" href="../static/css/overview.css">
 <title>Overview</title>
+{% endblock %}
+{% block body %}}
+<h1 style="text-align: center;">Overview</h1>
+<h3 style="text-align: center;">daily</h3>
+<div class="container" id="expenditureblock" align="center">
+    <embed type="image/svg+xml" src="static/img/chart.svg" id="expenditure">
+</div>
+<div class="container" id="calorieblock" align="center">
+    <embed type="image/svg+xml" src="static/img/chart2.svg" id="calorie">
+</div>
 {% endblock %}

@@ -1,9 +1,8 @@
 body{
-    background-color: white;
+    background-color: white ;
 }
 h1{
-    padding-top: 50px;
-    padding-left: 20px;
+    padding-top: 60px;
 }
 #navbar{
     -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.31);
