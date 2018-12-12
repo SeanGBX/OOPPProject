@@ -1,8 +1,49 @@
 {% extends "layouts.html" %}
+{% block head %}
+{{super()}}
+<link rel="stylesheet" type="text/css" href="../static/css/profile.css">
+<script src="../static/js/editprofile.js"></script>
+{% endblock %}
 {% block body %}
+
+
 {% if user %}
-    <h1>Welcome back {{ user }}</h1>
+<h1>
+    <span class="badge badge-secondary" style="margin: auto;">Profile</span>
+    <a class="btn btn-info" href="/editprofile" style="float: right;margin-right: 40px;">Edit Profile</a>
+</h1>
 {% else %}
-    <h1>Log in to view your profile</h1>
+<h1>
+    <span class="badge badge-secondary" style="align: center;">Profile</span>
+    <a class="btn btn-info" href="/editprofile" style="float: right;margin-right: 40px;">Edit Profile</a>
+</h1>
 {% endif %}
+
+<div class="container" id="Area1" style="float: left;width: 50%;">
+    <img src="../static/img/profilepic.png" style=";border:4px solid grey ;margin-bottom: 10px;margin-left: 200px;">
+    <div class="card" style="">
+        <div class="card-body">
+            <h5 class="card-title"><span class="badge badge-secondary">Username</span></h5>
+            <div id="username" class="card-text"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="Area2" style="float:right;width: 50%;">
+    <div class="card" style="">
+        <div class="card-body">
+            <h5 class="card-title"><span class="badge badge-secondary">Bio</span></h5>
+            <div class="card-text">This is an example of a bio.</div>
+            <hr>
+            <h5 class="card-title"><span class="badge badge-secondary">Contact</span></h5>
+            <div class="card-text">9112429.</div>
+            <hr>
+            <h5 class="card-title"><span class="badge badge-secondary">Favourite Food</span></h5>
+            <p class="card-text">Pineapple</p>
+
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}

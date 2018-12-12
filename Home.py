@@ -22,6 +22,9 @@ def expenditure():
 def index(user = None):
     return render_template("profile.html", user=user)
 
+@app.route("/editprofile")
+def editprofile():
+    return render_template("editprofile.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
