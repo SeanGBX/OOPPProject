@@ -1,5 +1,92 @@
 {% extends "layouts.html" %}
-<title>Expiration</title>
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" type = "text/css" href="../static/css/expiration.css">
+    <title>Expiration</title>
+{% endblock %}
 {% block body %}
-<h1>Expiration</h1>
+    <h1 id = "heading1">Your Food Inventory:</h1>
+    <h3 id = "heading2">Expires in (number of days)</h3>
+    <ul id = "todoList1">
+
+    </ul>
+
+    <ul id = "todoList2">
+
+    </ul><br>
+    <button type = "button" id = "button2" onclick = "show()">new</button><br>
+    <form id = "todoForm" style="display: none">
+        New item's name:<br>
+        <input id = "todoInput1"><br>
+        New item's Expiring timing:<br>
+        <input id = "todoInput2"><br>
+
+        <button type = "button" id = "button1" onclick = "addItem()">Add Item</button>
+    </form>
+    <a href = "setExpiry.html" id = "setExpiry" style = "text-decoration: none">Detailed input</a>
+
+
+    <h1 id = "heading3">Expiring Food:</h1>
+    <ul id = "todoList3">
+
+    </ul>
+        <button type = "button" id = "button3" onclick = "expiring();">Refresh</button><br>
+
+    <a href = "receipt.html" id = "receipt" style = "text-decoration: none">Receipt</a><br><br><br><br><br><br>
+
+    <script>
+
+    function addItem() {
+        var item = document.getElementById("todoInput1").value;
+        var text1 = document.createTextNode(item);
+        var time = document.getElementById("todoInput2").value;
+        var text2 = document.createTextNode(time);
+        var newItem1 = document.createElement("li");
+        var newItem2 = document.createElement("li");
+        newItem1.appendChild(text1);
+        newItem2.appendChild(text2);
+        document.getElementById("todoList1").appendChild(newItem1);
+        document.getElementById("todoList2").appendChild(newItem2);
+        alert("Add items completed");
+    }
+
+    function show(){
+        document.getElementById("todoForm").style.display = "block";
+        document.getElementById("button2").innerHTML = "";
+        document.getElementById("button2").style.color = "white";
+    }
+
+    function expiring(){
+
+
+        var timing = document.getElementById("todoList2");
+        var timings = timing.getElementsByTagName("li");
+        var name = document.getElementById("todoList1");
+        var names = name.getElementsByTagName("li");
+        var i;
+        for (i = 0; i < timings.length; i++){
+                var item = timings[i].innerHTML;
+                var item1 = parseInt(item);
+                if (1 >= item1) {
+                    var item2 = names[i].innerHTML;
+                    console.log(item2);
+                    var text = document.createTextNode(item2);
+                    var newItem = document.createElement("li");
+                    newItem.appendChild(text);
+                    document.getElementById("todoList3").appendChild(newItem);
+                    document.getElementById("button3").innerHTML = "";
+                    document.getElementById("button3").style.color = "white";
+            }
+        }
+
+
+    }
+
+    function showButton(){
+        document.getElementById("button3").innerHTML = "Refresh";
+    }
+
+
+    </script>
+
 {% endblock %}

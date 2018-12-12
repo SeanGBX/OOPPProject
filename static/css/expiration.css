@@ -1,0 +1,59 @@
+body{
+    background-color: white;
+}
+h1{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+#heading1 {
+    padding-left: 38%;
+    width:30%;
+    background-color: darkgrey;
+    color: white;
+}
+
+#heading2 {
+    padding-left: 45%;
+    background-color: darkgrey;
+    color: white;
+}
+
+ul{
+    width:40%;
+    text-align:center;
+    display:inline-block;
+    vertical-align: top;
+    padding-left:0;
+}
+
+li{
+    list-style:none;
+    font-size:150%;
+}
+
+#todoList1 li{
+    text-align:right;
+}
+
+#heading3 {
+    padding-left:42%;
+    background-color: darkgrey;
+    color: white;
+}
+
+#todoList3{
+    width:100%;
+}
+
+#todoList3 li{
+    text-align:center;
+}
+
+#button3{
+    margin-left:75%;
+}
+
+button{
+    font-size:100%;
+    background-color: darkgrey;
+}
