@@ -163,6 +163,11 @@ def expenditure():
 def user():
     return render_template("profile.html")
 
+@app.route("/editprofile")
+@login_required
+def editprofile():
+    return render_template("editprofile.html")
+
 @app.route("/profile/<user>")
 @login_required
 def profile(user = None):
