@@ -153,10 +153,20 @@ def logout():
 def expiration():
     return render_template("expiration.html")
 
+@app.route("/setexpiration")
+@login_required
+def setexpiration():
+    return render_template("setExpiry.html")
+
 @app.route("/expenditure")
 @login_required
 def expenditure():
     return render_template("expenditure.html")
+
+@app.route("/addfood")
+@login_required
+def addfood():
+    return render_template("addfood.html")
 
 @app.route("/profile")
 @login_required

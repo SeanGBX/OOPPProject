@@ -1,26 +1,38 @@
 {% extends "layouts.html" %}
+{% block head %}
+{{super()}}
+<link rel="stylesheet" type="text/css" href="../static/css/expenditure.css">
 <title>Expenditure</title>
+{% endblock %}
 {% block body %}
 <h1>Expenditures</h1>
 
-<div class="card" style="width: 50rem;float: center;margin: auto;">
+<div class="card" id="card1">
     <div class="card-body">
-        <h5 class="card-title"><span class="badge badge-secondary">Allowance</span></h5>
+        <h5 class="card-title"><span class="badge badge-secondary">Allowance for 1 week</span><a href=""><img id="changeal" src="../static/img/....png"></a></h5>
         <div class="card-text">$50</div>
     </div>
 </div>
 
-<div class="card" style="width: 50rem;float: center;margin: auto;margin-top: 50px">
+<div class="card" id="card2">
     <div class="card-body">
         <h5 class="card-title"><span class="badge badge-secondary">Food Item</span></h5>
-        <div class="card-text">Apple</div>
+        <div class="card-text">Apple - $0.90<div class="card-text" id="calorie">95 Cal</div></div>
         <hr>
-        <h5 class="card-title"><span class="badge badge-secondary">Food Item</span></h5>
-        <div class="card-text">Add Item<img src="../static/img/add.png" style="width: 20px; length: 20px;margin-left: 20px;"></div>
+        <div class="card-text"><a href="/addfood"><img id="additem" src="../static/img/add.png">Add Item</a></div>
     </div>
 </div>
-Your set allowance for 1 week :$50
-
-Add Food Item
+    {% if result %}
+        <tr>
+            <th>Food</th>
+            <th>Price</th>
+        </tr>
+        {% for row in result %}
+            <tr>
+                <td> {{ row.food }}</td>
+                <td> {{ row.price }}</td>
+            </tr>
+        {% endfor %}
+    {% endif %}
 
 {% endblock %}

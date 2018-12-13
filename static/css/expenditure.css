@@ -1,0 +1,25 @@
+#card1{
+    width: 50rem;
+    margin: auto;
+}
+#card2{
+    height:600px;
+    width: 50rem;
+    margin: auto;
+    margin-top: 50px
+}
+#changeal{
+    float: right;
+    width: 50px;
+    length: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#additem{
+    width: 35px;
+    length: 20px;
+    margin-right: 5px;
+}
+#addfoodbtn{
+    float:right;
+}

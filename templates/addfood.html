@@ -1,10 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "layouts.html" %}
+{% block head %}
+{{super()}}
+<link rel="stylesheet" type="text/css" href="../static/css/expenditure.css">
+<title>Expenditure</title>
+{% endblock %}
+{% block body %}
+<h1>Expenditures</h1>
+
+<div class="card" id="card2">
+    <div class="card-body">
+        <h5 class="card-title"><span class="badge badge-secondary">Food Item</span></h5>
+        <div class="card-text">Apple - $0.90<button class="btn btn-primary btn-sm" style="float: right;" "button" class="btn btn-primary">Add Food </button> </div>
+        <hr>
+        <div class="card-text">Chicken Rice - $3.00<button class="btn btn-primary btn-sm" style="float: right;" "button" class="btn btn-primary">Add Food </button> </div>
+        <hr>
+        <div class="card-text">Bubble Tea - $2.00<button class="btn btn-primary btn-sm" style="float: right;" "button" class="btn btn-primary">Add Food </button> </div>
+        <hr>
+        <div class="card-text">Fishball Noodles - $3.00<button class="btn btn-primary btn-sm" style="float: right;" "button" class="btn btn-primary">Add Food </button> </div>
+        <hr>
+        <div class="card-text">Burger - $3.50<button class="btn btn-primary btn-sm" style="float: right;" "button" class="btn btn-primary">Add Food </button> </div>
+        <hr>
+
+    </div>
+</div>
+
+{% endblock %}

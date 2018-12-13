@@ -1,5 +1,32 @@
 {% extends "layouts.html" %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="../static/css/home.css">
 <title>Home</title>
+{% endblock %}
 {% block body %}
-<h1>Home</h1>
+ <header class="header">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">SmartRumble is an app where you can track when your food items will expire or how much you are spending on food!</h1>
+              <a href="/register" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <div class="device-mockup iphone6_plus portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!--SmartRumble app -->
+                    <img src="../static/img/mobilephone.png" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 {% endblock %}

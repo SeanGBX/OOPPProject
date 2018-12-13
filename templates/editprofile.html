@@ -11,13 +11,13 @@
 <h1>
     <span class="badge badge-secondary">Profile</span>
     <a class="btn btn-success" href="" style="float: right;margin-right: 40px;">Save</a>
-    <a class="btn btn-danger" href="/profile/user" style="float: right;margin-right: 20px;">Cancel</a>
+    <a class="btn btn-danger" href="/profile" style="float: right;margin-right: 20px;">Cancel</a>
 </h1>
 {% else %}
 <h1>
     <span class="badge badge-secondary">Profile</span>
-    <a class="btn btn-success" style="float: right;margin-right: 40px;" onclick="updateprofile()">Save</a>
-    <a class="btn btn-danger" href="/profile/user" style="float: right;margin-right: 20px;">Cancel</a>
+    <a class="btn btn-success" href="/profile" style="float: right;margin-right: 40px;" onclick="updateprofile()">Save</a>
+    <a class="btn btn-danger" href="/profile" style="float: right;margin-right: 20px;">Cancel</a>
 </h1>
 {% endif %}
 <!-- Form area -->
@@ -27,7 +27,7 @@
         <div class="card" style="">
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-secondary">Username</span></h5>
-                <input id="e-username" class="form-control" placeholder="Cube">
+                <input id="e-username" class="form-control" placeholder="Username   ">
             </div>
         </div>
     </div>

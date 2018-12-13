@@ -1,0 +1,59 @@
+#heading1{
+    margin-left: 28%;
+    width:45%;
+    border: 1px solid white;
+    background-color: darkgrey;
+    color:white;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+    text-align:center;
+}
+
+#todoForm2{
+    margin-left:40%;
+}
+
+input{
+     width:20%;
+    border-radius: 5px;
+    background-color: cornsilk;
+    padding: 4px 10px;
+}
+
+#itemName{
+    width:30%;
+}
+
+#itemRemark{
+    width:30.3%;
+    margin-left: 1.9%;
+}
+
+#expiryDay{
+    margin-left: 6.9%;
+    width:30.3%;
+}
+
+#expiryMonth{
+    margin-left: 5.7%;
+    width: 30.3%;
+}
+
+#expiryYear{
+    margin-left: 5.15%;
+    width:30.3%;
+}
+
+#button1{
+    margin-left: 25%;
+    font-size:100%;
+    background-color: darkgrey;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+}

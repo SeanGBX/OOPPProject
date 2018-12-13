@@ -1,24 +1,57 @@
-body{
-    background-color: white;
-}
-h1{
-    padding-top: 50px;
-    padding-left: 20px;
-}
 #heading1 {
-    padding-left: 38%;
-    width:30%;
+    margin-left: 32%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width:35%;
+    text-align:center;
+    border: 1px solid white;
     background-color: darkgrey;
-    color: white;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
 }
-
 #heading2 {
-    padding-left: 45%;
+    margin-left: 32%;
+    margin-top: 20px;
+    width:35%;
+    text-align:center;
+    border: 1px solid white;
     background-color: darkgrey;
-    color: white;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+#card1{
+    width: 50rem;
+    margin: auto;
+}
+#card2{
+    height:600px;
+    width: 50rem;
+    margin: auto;
+    margin-top: 50px
+}
+#additem{
+    width: 35px;
+    length: 20px;
+    margin-right: 5px;
+}
+#addfoodbtn{
+    float:right;
 }
 
-ul{
+#todoList1{
+    width:40%;
+    text-align:center;
+    display:inline-block;
+    vertical-align: top;
+    padding-left:0;
+}
+#todoList2{
     width:40%;
     text-align:center;
     display:inline-block;
@@ -26,34 +59,104 @@ ul{
     padding-left:0;
 }
 
-li{
+#todoList1 {
     list-style:none;
     font-size:150%;
-}
-
-#todoList1 li{
+    text-shadow: 5px 5px 5px #95A5A6;
     text-align:right;
 }
 
-#heading3 {
-    padding-left:42%;
-    background-color: darkgrey;
-    color: white;
+#todoList2 {
+    list-style:none;
+    font-size:150%;
+    text-shadow: 5px 5px 5px #95A5A6;
 }
 
-#todoList3{
-    width:100%;
+
+#todoList3 {
+    width: 100%;
 }
 
 #todoList3 li{
     text-align:center;
+    list-style:none;
+    font-size:150%;
+    text-shadow: 5px 5px 5px #95A5A6;
 }
 
 #button3{
     margin-left:75%;
-}
-
-button{
     font-size:100%;
     background-color: darkgrey;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+
+}
+
+#button1{
+    font-size:100%;
+    background-color: darkgrey;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+
+}
+#button3{
+    font-size:100%;
+    background-color: darkgrey;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+
+}
+
+#setExpiry{
+    margin-top:10%;
+    width:25%;
+    background-color: darkgrey;
+    color:white;
+    border: none;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+
+}
+
+#button2{
+    border: none;
+    margin-bottom: 1.5%;
+    padding: 3px 20px;
+    background-color:violet;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+}
+
+input{
+    border-radius: 5px;
+    background-color: cornsilk;
+    padding: 3px 20px;
+}
+
+#receipt{
+    width:25%;
+    background-color: darkgrey;
+    color:white;
+    border: none;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
