@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="476f2cd4-efc0-4be3-9a2f-801ccbd4059b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb694912-3e15-4573-8b77-3e954a9494c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb694912-3e15-4573-8b77-3e954a9494c6.xml" afterDir="false" />
+    <list default="true" id="476f2cd4-efc0-4be3-9a2f-801ccbd4059b" name="Default Changelist" comment="Update">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/overview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/chart.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/chart2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/chart2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editprofile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/expenditure.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/expenditure.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,15 +71,17 @@
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Procfile" value="1" />
           <entry key="css" value="10" />
           <entry key="foodlist" value="1" />
           <entry key="html" value="35" />
@@ -92,6 +89,7 @@
           <entry key="png" value="1" />
           <entry key="py" value="5" />
           <entry key="sql" value="6" />
+          <entry key="txt" value="1" />
           <entry key="users" value="6" />
         </counts>
       </usages-collector>
@@ -102,6 +100,7 @@
           <entry key="HTML" value="35" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="5" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="4" />
@@ -109,12 +108,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Procfile" value="30" />
           <entry key="cell" value="42" />
           <entry key="css" value="250" />
           <entry key="html" value="1282" />
           <entry key="js" value="34" />
-          <entry key="py" value="834" />
+          <entry key="py" value="853" />
           <entry key="sql" value="114" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -122,7 +123,8 @@
           <entry key="CSS" value="250" />
           <entry key="HTML" value="1282" />
           <entry key="JavaScript" value="34" />
-          <entry key="Python" value="834" />
+          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="Python" value="853" />
           <entry key="SQL" value="4" />
           <entry key="Scratch" value="152" />
         </counts>
@@ -143,14 +145,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/overview.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+            <state relative-caret-position="407">
+              <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
               <folding>
                 <element signature="e#0#93#0" expanded="true" />
-                <marker date="1546482188988" expanded="true" signature="5623:5836" ph="..." />
+                <marker date="1547219018557" expanded="true" signature="5623:5836" ph="..." />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -253,8 +269,9 @@
         <option value="$PROJECT_DIR$/templates/profile.html" />
         <option value="$PROJECT_DIR$/templates/editprofile.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/eb694912-3e15-4573-8b77-3e954a9494c6/console.sql" />
-        <option value="$PROJECT_DIR$/overview.py" />
         <option value="$PROJECT_DIR$/templates/expenditure.html" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/overview.py" />
       </list>
     </option>
   </component>
@@ -264,10 +281,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="975" />
-    <option name="height" value="1088" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -394,11 +411,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49100968" visible="true" weight="0.059731543" />
-      <window_info id="Structure" order="1" sideWeight="0.50899035" side_tool="true" visible="true" weight="0.059731543" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4896" visible="true" weight="0.20897156" />
+      <window_info id="Structure" order="1" sideWeight="0.5104" side_tool="true" visible="true" weight="0.20897156" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="SVN Repositories" order="0" sideWeight="0.49932885" visible="true" weight="0.32918397" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -412,7 +429,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50201344" side_tool="true" weight="0.32918397" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49932885" weight="0.32918397" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49932885" visible="true" weight="0.32867885" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32918397" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32918397" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -427,6 +444,9 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/img/....png">
@@ -600,13 +620,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/overview.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+        <state relative-caret-position="407">
+          <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
           <folding>
             <element signature="e#0#93#0" expanded="true" />
-            <marker date="1546482188988" expanded="true" signature="5623:5836" ph="..." />
+            <marker date="1547219018557" expanded="true" signature="5623:5836" ph="..." />
           </folding>
         </state>
       </provider>
