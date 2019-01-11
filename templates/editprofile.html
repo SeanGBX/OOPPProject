@@ -6,20 +6,12 @@
 {% endblock %}
 {% block body %}
 
+<h1>
+    <span class="badge badge-secondary">Profile</span>
+    <input form="editprofileform" type="submit" class="btn btn-success" style="float: right;margin-right: 40px;">
+    <a class="btn btn-danger" href="/profile" style="float: right;margin-right: 20px;">Cancel</a>
+</h1>
 
-{% if user %}
-<h1>
-    <span class="badge badge-secondary">Profile</span>
-    <a class="btn btn-success" href="" style="float: right;margin-right: 40px;">Save</a>
-    <a class="btn btn-danger" href="/profile" style="float: right;margin-right: 20px;">Cancel</a>
-</h1>
-{% else %}
-<h1>
-    <span class="badge badge-secondary">Profile</span>
-    <a class="btn btn-success" href="/profile" style="float: right;margin-right: 40px;" onclick="updateprofile()">Save</a>
-    <a class="btn btn-danger" href="/profile" style="float: right;margin-right: 20px;">Cancel</a>
-</h1>
-{% endif %}
 <!-- Form area -->
 <form id="editprofileform" method="post">
     <div class="container" id="Area1" style="float: left;width: 50%;">
@@ -27,7 +19,7 @@
         <div class="card" style="">
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-secondary">Username</span></h5>
-                <input id="e-username" class="form-control" placeholder="Username   ">
+                <input id="e-username" class="form-control" placeholder="{{ session.username }}">
             </div>
         </div>
     </div>
@@ -35,14 +27,11 @@
     <div class="container" id="Area2" style="float:right;width: 50%;">
         <div class="card" style="">
             <div class="card-body">
-                <h5 class="card-title"><span class="badge badge-secondary">Bio</span></h5>
-                <textarea class="form-control"></textarea>
+                <h5 class="card-title"><span class="badge badge-secondary">Name</span></h5>
+                <input class="form-control" placeholder="{{ session.name }}">
                 <hr>
-                <h5 class="card-title"><span class="badge badge-secondary">Contact</span></h5>
-                <input class="form-control" placeholder="9112429">
-                <hr>
-                <h5 class="card-title"><span class="badge badge-secondary">Favourite Food</span></h5>
-                <input class="form-control" placeholder="Pineapple">
+                <h5 class="card-title"><span class="badge badge-secondary">Email</span></h5>
+                <input class="form-control" placeholder="{{ session.email }}">
 
             </div>
         </div>

@@ -6,45 +6,40 @@
 <script src="../static/js/editprofile.js"></script>
 {% endblock %}
 {% block body %}
-
-
 {% if user %}
     <h1>Profile</h1>
-<h1>
-    <a class="btn btn-info" href="/editprofile" >Edit Profile</a>
-</h1>
+    <h1>
+        <a class="btn btn-info" href="/profile/editprofile">Edit Profile</a>
+    </h1>
+    <div class="container" id="Area1">
+        <img src="../static/img/profilepic.png" id="profpic">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-secondary">Username</span></h5>
+                <div id="username" class="card-text">{{ session.username }}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="Area2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-secondary">Name</span></h5>
+                <div class="card-text">{{ session.name }}</div>
+                <hr>
+                <h5 class="card-title"><span class="badge badge-secondary">Email</span></h5>
+                <div class="card-text">{{ session.email }}</div>
+
+            </div>
+        </div>
+    </div>
+
 {% else %}
 <h1>
     <span class="badge badge-secondary">Profile</span>
-    <a class="btn btn-info" href="/editprofile">Edit Profile</a>
+    <a class="btn btn-info" href="/profile/editprofile">Edit Profile</a>
 </h1>
 {% endif %}
-
-<div class="container" id="Area1">
-    <img src="../static/img/profilepic.png" id="profpic">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title"><span class="badge badge-secondary">Username</span></h5>
-            <div id="username" class="card-text"></div>
-        </div>
-    </div>
-</div>
-
-<div class="container" id="Area2">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title"><span class="badge badge-secondary">Bio</span></h5>
-            <div class="card-text">This is an example of a bio.</div>
-            <hr>
-            <h5 class="card-title"><span class="badge badge-secondary">Contact</span></h5>
-            <div class="card-text">9112429.</div>
-            <hr>
-            <h5 class="card-title"><span class="badge badge-secondary">Favourite Food</span></h5>
-            <p class="card-text">Pineapple</p>
-
-        </div>
-    </div>
-</div>
 
 
 {% endblock %}

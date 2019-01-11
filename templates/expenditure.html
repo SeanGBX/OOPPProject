@@ -17,22 +17,20 @@
 <div class="card" id="card2">
     <div class="card-body">
         <h5 class="card-title"><span class="badge badge-secondary">Food Item</span></h5>
-        <div class="card-text">Apple - $0.90<div class="card-text" id="calorie">95 Cal</div></div>
-        <hr>
-        <div class="card-text"><a href="/addfood"><img id="additem" src="../static/img/add.png">Add Item</a></div>
-    </div>
-</div>
-    {% if result %}
-        <tr>
-            <th>Food</th>
-            <th>Price</th>
-        </tr>
-        {% for row in result %}
+        <div class="card-text">
+        <!-- Display food database-->
+        {% if data %}
+        {% for row in data %}
             <tr>
-                <td> {{ row.food }}</td>
-                <td> {{ row.price }}</td>
+                <td> {{ row.food }} - </td>
+                <td> ${{"%.2f" % row.price }}</td>
+                <td><div class="card-text" id="calorie"> {{ row.calories }} Cal</div></td>
+                <td><hr></td>
             </tr>
         {% endfor %}
     {% endif %}
-
+        <div class="card-text"><a href="/addfood"><img id="additem" src="../static/img/add.png">Add Item</a></div>
+        </div>
+    </div>
+</div>
 {% endblock %}

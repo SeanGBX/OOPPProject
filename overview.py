@@ -18,6 +18,7 @@ app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 # init MYSQL
 mysql = MySQL(app)
 
+#wraps wraps up the function into an @
 def login_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
@@ -128,15 +129,21 @@ def login():
         result = cur.execute("SELECT * FROM users WHERE username = %s", [username])
 
         if result > 0:
-            #Get stored hash
+            # Get stored hash
             data = cur.fetchone()
             password = data["password"]
+            # Get user info
+            name = data["name"]
+            email = data["email"]
             #Compare pass
             if sha256_crypt.verify(inppassword, password):
                 app.logger.info("PASSWORD MATCHED")
                 session["logged_in"] = True
+                session["username"] = username
+                session["name"] = name
+                session["email"] = email
                 flash("You have been logged in!")
-                return redirect(url_for("profile", user="admin"))
+                return redirect(url_for("profile", user=username))
         else:
             app.logger.info("NO USER")
             error = "The account name or password that you have entered is incorrect."
@@ -161,7 +168,10 @@ def setexpiration():
 @app.route("/expenditure")
 @login_required
 def expenditure():
-    return render_template("expenditure.html")
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM foodlist")
+    data = cur.fetchall()
+    return render_template("expenditure.html", data=data)
 
 @app.route("/addfood")
 @login_required
@@ -171,17 +181,27 @@ def addfood():
 @app.route("/profile")
 @login_required
 def user():
-    return render_template("profile.html")
-
-@app.route("/editprofile")
-@login_required
-def editprofile():
-    return render_template("editprofile.html")
+    username = session["username"]
+    return redirect(url_for("profile", user=username))
 
 @app.route("/profile/<user>")
 @login_required
-def profile(user = None):
+def profile(user):
     return render_template("profile.html", user=user)
+
+class ProfileForm(Form):
+    name = StringField("Name", [validators.Length(min=1, max=50)])
+    username = StringField("Username", [validators.Length(min=3, max=25)])
+    email = StringField("Email", [validators.Length(min=6, max=50)])
+
+@app.route("/profile/editprofile")
+@login_required
+def editprofile():
+    form = ProfileForm(request.form)
+    if request.method == "POST":
+        pass
+    return render_template("editprofile.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
