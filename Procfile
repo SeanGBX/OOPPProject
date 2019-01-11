@@ -1,1 +1,1 @@
-web: gunicorn OOPP_Project:app
+web: gunicorn OOPP.Project:app
