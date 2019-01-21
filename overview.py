@@ -142,10 +142,11 @@ def login():
                 session["username"] = username
                 session["name"] = name
                 session["email"] = email
+                session["allowance"] = 0
                 flash("You have been logged in!")
                 return redirect(url_for("profile", user=username))
         else:
-            app.logger.info("NO USER")
+            app.logger.info("ERROR OCCURRED")
             error = "The account name or password that you have entered is incorrect."
     return render_template('login.html', error=error)
 
@@ -171,14 +172,27 @@ def expenditure():
     cur = mysql.connection.cursor()
     cur.execute("SELECT * FROM foodlist")
     data = cur.fetchall()
+
     return render_template("expenditure.html", data=data)
+
+@app.route("/allowance", methods=('GET', 'POST'))
+@login_required
+def allowance():
+    if request.method == "POST":
+        allowance = request.form["allowance"]
+        session["allowance"] = allowance
+        return render_template("expenditure.html")
+    else:
+        app.logger.info("ERROR OCCURRED")
+
+    return render_template("allowance.html")
 
 @app.route("/addfood")
 @login_required
 def addfood():
     return render_template("addfood.html")
 
-@app.route("/profile")
+@app.route("/profile/")
 @login_required
 def user():
     username = session["username"]
@@ -194,13 +208,25 @@ class ProfileForm(Form):
     username = StringField("Username", [validators.Length(min=3, max=25)])
     email = StringField("Email", [validators.Length(min=6, max=50)])
 
-@app.route("/profile/editprofile")
+@app.route("/profile/editprofile", methods=('GET', 'POST'))
 @login_required
 def editprofile():
     form = ProfileForm(request.form)
+    user1 = session["username"]
     if request.method == "POST":
-        pass
+        name = request.form["name"]
+        email = request.form["email"]
+        username = request.form["username"]
+        session["username"] = username
+        session["name"] = name
+        session["email"] = email
+        return render_template("profile.html", user=user1)
+    else:
+        app.logger.info("NO USER")
+        error = "The account name or password that you have entered is incorrect."
+
     return render_template("editprofile.html")
+
 
 
 if __name__ == "__main__":
