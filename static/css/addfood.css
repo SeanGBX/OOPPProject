@@ -1,0 +1,50 @@
+#myInput {
+    background-image: url(../img/searchicon.png);
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border-bottom: 1px solid #ddd;
+    margin-top: -1px;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+.qrcode-text {
+    padding-right:1.7em;
+    margin-right:0;
+}
+.qrcode-text-btn {
+    display:inline-block;
+    background:url("../img/qrcode.png") 50% 50% no-repeat;
+    height:27px;
+    width:1.7em;
+    margin-left:-1.7em;
+    margin-top: 8px;
+    cursor:pointer;
+}
+.qrcode-text-btn > input[type=file] {
+    position:absolute;
+    overflow:hidden;
+    width:1px;
+    height:1px;
+    opacity:0;
+}

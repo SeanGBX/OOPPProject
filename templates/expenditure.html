@@ -21,14 +21,11 @@
         <!-- Display food database-->
         {% if data %}
         {% for row in data %}
-            <tr>
-                <td> {{ row.food }} - </td>
-                <td> ${{"%.2f" % row.price }}</td>
-                <td><div class="card-text" id="calorie"> {{ row.calories }} Cal</div></td>
-                <td><hr></td>
-            </tr>
+                {{ row.food }} -
+                ${{"%.2f" % row.price }} <div class="card-text" id="calorie"> {{ row.calories }} Cal</div>
+                <hr>
         {% endfor %}
-    {% endif %}
+        {% endif %}
         <div class="card-text"><a href="/addfood"><img id="additem" src="../static/img/add.png">Add Item</a></div>
         </div>
     </div>
