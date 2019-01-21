@@ -2,24 +2,22 @@
 {% block head %}
 {{super()}}
 <link rel="stylesheet" type="text/css" href="../static/css/profile.css">
-<script src="../static/js/editprofile.js"></script>
 {% endblock %}
 {% block body %}
 
 <h1>
     <span class="badge badge-secondary">Profile</span>
-    <input form="editprofileform" type="submit" class="btn btn-success" style="float: right;margin-right: 40px;">
-    <a class="btn btn-danger" href="/profile" style="float: right;margin-right: 20px;">Cancel</a>
+
 </h1>
 
 <!-- Form area -->
-<form id="editprofileform" method="post">
+<form id="editprofileform" action="" method="post">
     <div class="container" id="Area1" style="float: left;width: 50%;">
         <img src="../static/img/profilepic.png" style=";border:4px solid grey ;margin-bottom: 10px;margin-left: 200px;">
         <div class="card" style="">
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-secondary">Username</span></h5>
-                <input id="e-username" class="form-control" placeholder="{{ session.username }}">
+                <input type="text" onfocus="this.value=''" name="username" tabindex="1" id="e-username" class="form-control" placeholder="{{ session.username }}" value="{{ session.username }}">
             </div>
         </div>
     </div>
@@ -28,14 +26,16 @@
         <div class="card" style="">
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-secondary">Name</span></h5>
-                <input class="form-control" placeholder="{{ session.name }}">
+                <input type="text" onfocus="this.value=''" name="name" tabindex="2" class="form-control";" placeholder="{{ session.name }}" value="{{ session.name }}">
                 <hr>
                 <h5 class="card-title"><span class="badge badge-secondary">Email</span></h5>
-                <input class="form-control" placeholder="{{ session.email }}">
+                <input type="email" onfocus="this.value=''" name="email" tabindex="3" class="form-control" placeholder="{{ session.email }}" value="{{ session.email }}">
 
             </div>
         </div>
     </div>
+    <input form="editprofileform" name="register-submit" type="submit" class="btn btn-success" style="float: right;margin-right: 40px;">
+    <a class="btn btn-danger" href="/profile" style="float: right;margin-right: 20px;">Cancel</a>
 </form>
 
 {% endblock %}

@@ -2,6 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="476f2cd4-efc0-4be3-9a2f-801ccbd4059b" name="Default Changelist" comment="" />
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/allowance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OOPPProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OOPPProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OOPPProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OOPPProjects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb694912-3e15-4573-8b77-3e954a9494c6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb694912-3e15-4573-8b77-3e954a9494c6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/overview.py" beforeDir="false" afterPath="$PROJECT_DIR$/overview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/chart2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/chart2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/addfood.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/addfood.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/editprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/expenditure.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/expenditure.html" afterDir="false" />
+=======
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,8 +27,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+<<<<<<< HEAD
+    <SUITE FILE_PATH="coverage/OOPP_Project$overview.coverage" NAME="overview Coverage Results" MODIFIED="1548052531187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
     <SUITE FILE_PATH="coverage/OOPPProjects$overview.coverage" NAME="overview Coverage Results" MODIFIED="1548057651922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/OOPP_Project$overview.coverage" NAME="overview Coverage Results" MODIFIED="1547219253959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -37,25 +59,22 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="registerdb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="registerdb: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="registerdb: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="registerdb@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="registerdb: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="foodlist: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="registerdb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="registerdb: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="users: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="registerdb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="foodlist: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
+<<<<<<< HEAD
+  <component name="FavoritesManager">
+    <favorites_list name="OOPP Project" />
+=======
   <component name="FUSProjectUsageTrigger">
     <session id="1063832219">
       <usages-collector id="statistics.lifecycle.project">
@@ -129,31 +148,54 @@
         </counts>
       </usages-collector>
     </session>
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/overview.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="63">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+=======
             <state relative-caret-position="144">
               <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
               <folding>
                 <marker date="1548059121669" expanded="true" signature="5738:5951" ph="..." />
               </folding>
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/templates/editprofile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="13" column="51" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="51" />
+              <folding>
+                <element signature="e#1473#1513#0#HTML" expanded="true" />
+                <element signature="e#1561#1601#0#HTML" expanded="true" />
+              </folding>
+=======
         <entry file="file://$PROJECT_DIR$/templates/overview.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
               <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/templates/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
+=======
         <entry file="file://$PROJECT_DIR$/templates/addfood.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="387">
@@ -161,15 +203,23 @@
               <folding>
                 <element signature="n#style#0;n#button#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
+=======
         <entry file="file://$PROJECT_DIR$/templates/expenditure.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="423">
               <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
@@ -177,53 +227,97 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/addfood.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="-18">
+              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+=======
             <state relative-caret-position="166">
               <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/overview.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2001">
+              <caret line="148" column="43" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#93#0" expanded="true" />
+              </folding>
+=======
         <entry file="file://$PROJECT_DIR$/static/css/expenditure.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-17">
               <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/templates/allowance.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding>
+                <element signature="e#536#588#0#HTML" expanded="true" />
+                <element signature="e#553#606#0#HTML" expanded="true" />
+              </folding>
+=======
         <entry file="file://$PROJECT_DIR$/static/js/addfood.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="409">
               <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/eb694912-3e15-4573-8b77-3e954a9494c6/console.sql">
+        <entry file="file://$PROJECT_DIR$/templates/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
+            <state relative-caret-position="136">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/addfood.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#631#652#0#HTML" expanded="true" />
+              </folding>
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/expiration.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1606">
               <caret line="73" selection-start-line="73" selection-end-line="73" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/templates/includes/_navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+=======
         <entry file="das://eb694912-3e15-4573-8b77-3e954a9494c6/schema/registerdb/table/foodlist">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
             </state>
           </provider>
         </entry>
@@ -233,9 +327,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
+=======
         <option value="HTML File" />
         <option value="JavaScript File" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -244,6 +342,8 @@
       <find>style</find>
       <find>Session</find>
       <find>submit</find>
+      <find>butt</find>
+      <find>session</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -271,8 +371,16 @@
         <option value="$PROJECT_DIR$/templates/includes/_navbar.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/profile.html" />
-        <option value="$PROJECT_DIR$/templates/editprofile.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/eb694912-3e15-4573-8b77-3e954a9494c6/console.sql" />
+<<<<<<< HEAD
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/templates/editprofile.html" />
+        <option value="$PROJECT_DIR$/templates/addfood.html" />
+        <option value="$PROJECT_DIR$/templates/expenditure.html" />
+        <option value="$PROJECT_DIR$/templates/allowance.html" />
+=======
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/static/css/expenditure.css" />
@@ -281,10 +389,18 @@
         <option value="$PROJECT_DIR$/static/css/addfood.css" />
         <option value="$PROJECT_DIR$/templates/addfood.html" />
         <option value="$PROJECT_DIR$/static/js/addfood.js" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
         <option value="$PROJECT_DIR$/overview.py" />
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="819" />
+    <option name="y" value="-21" />
+    <option name="width" value="975" />
+    <option name="height" value="1089" />
+=======
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -296,6 +412,7 @@
     <option name="y" value="-20" />
     <option name="width" value="975" />
     <option name="height" value="1090" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -306,8 +423,23 @@
         <subPane>
           <expand>
             <path>
-              <item name="OOPPProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOPP Project" type="462c0819:PsiDirectoryNode" />
+              <item name="OOPP Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOPPProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOPP Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOPPProject" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOPP Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOPPProject" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OOPP Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OOPPProject" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OOPPProjects" type="b2602c69:ProjectViewProjectNode" />
@@ -342,6 +474,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -397,6 +530,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544596020079</updated>
+      <workItem from="1547457290210" duration="669000" />
+      <workItem from="1548037283673" duration="15970000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1547219205064</created>
@@ -408,6 +543,9 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16639000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -418,16 +556,53 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4851695" visible="true" weight="0.10526316" />
+      <window_info id="Structure" order="1" sideWeight="0.5148305" side_tool="true" weight="0.10526316" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32955465" />
+      <window_info active="true" anchor="bottom" id="SVN Repositories" order="0" sideWeight="0.49932885" visible="true" weight="0.32918397" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49716598" visible="true" weight="0.1616341" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32867885" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.502834" side_tool="true" visible="true" weight="0.1616341" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49932885" weight="0.3445826" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32867885" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3285968" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" weight="0.2388664" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4851695" visible="true" weight="0.10526316" />
+      <window_info id="Structure" order="1" sideWeight="0.5148305" side_tool="true" visible="true" weight="0.10526316" />
+=======
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4719472" visible="true" weight="0.23355705" />
       <window_info id="Structure" order="1" sideWeight="0.5280528" side_tool="true" visible="true" weight="0.23355705" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="SVN Repositories" order="0" sideWeight="0.49932885" visible="true" weight="0.32918397" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49798658" visible="true" weight="0.1616341" />
+=======
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49798658" visible="true" weight="0.16182573" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -436,30 +611,43 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50201344" side_tool="true" weight="0.32918397" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49932885" weight="0.3445826" />
+=======
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49932885" weight="0.16182573" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32867885" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32918397" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3295302" />
+<<<<<<< HEAD
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.2388664" />
+    </layout-to-restore>
+=======
       <window_info anchor="right" id="Database" order="4" visible="true" weight="0.10536913" />
     </layout>
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/static/img/....png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/eb694912-3e15-4573-8b77-3e954a9494c6/console_1.sql" />
+=======
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/eb694912-3e15-4573-8b77-3e954a9494c6/console_1.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
     <entry file="file://$PROJECT_DIR$/templates/setExpiry.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -508,13 +696,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/includes/_navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/static/js/editprofile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -522,20 +704,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Object-Oriented Programming/venv/Lib/site-packages/MySQLdb/cursors.py">
+    <entry file="file://$PROJECT_DIR$/../Object-Oriented Programming/venv/Lib/site-packages/MySQLdb/cursors.py" />
+    <entry file="file://$PROJECT_DIR$/static/css/expenditure.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="416" column="8" selection-start-line="416" selection-start-column="8" selection-end-line="416" selection-end-column="8" />
+        <state relative-caret-position="374">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://eb694912-3e15-4573-8b77-3e954a9494c6/schema/registerdb/table/users.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/expiration.css">
+=======
+    <entry file="file://$PROJECT_DIR$/templates/includes/_navbar.html">
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/eb694912-3e15-4573-8b77-3e954a9494c6/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://eb694912-3e15-4573-8b77-3e954a9494c6/schema/registerdb/table/foodlist">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://eb694912-3e15-4573-8b77-3e954a9494c6/schema/registerdb/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="69" column="71" lean-forward="true" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
+        <state relative-caret-position="374">
+          <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/werkzeug/routing.py">
+=======
     <entry file="file://$PROJECT_DIR$/templates/editprofile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
@@ -567,12 +812,19 @@
     </entry>
     <entry file="das://eb694912-3e15-4573-8b77-3e954a9494c6/schema/registerdb/table/users" />
     <entry file="file://$PROJECT_DIR$/templates/profile.html">
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="64" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+        <state relative-caret-position="149">
+          <caret line="1775" selection-start-line="1775" selection-end-line="1775" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/templates/includes/_navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+=======
     <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-528" />
@@ -585,16 +837,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/expiration.css">
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="17">
+          <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/templates/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/allowance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#536#588#0#HTML" expanded="true" />
+            <element signature="e#553#606#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/overview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2001">
+          <caret line="148" column="43" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/expenditure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/editprofile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="51" />
+          <folding>
+            <element signature="e#1473#1513#0#HTML" expanded="true" />
+            <element signature="e#1561#1601#0#HTML" expanded="true" />
+=======
     <entry file="das://eb694912-3e15-4573-8b77-3e954a9494c6/schema/registerdb/table/foodlist">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -629,10 +933,19 @@
           <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#button#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/templates/addfood.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#631#652#0#HTML" expanded="true" />
+=======
     <entry file="file://$PROJECT_DIR$/templates/overview.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -646,6 +959,7 @@
           <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
           <folding>
             <marker date="1548059121669" expanded="true" signature="5738:5951" ph="..." />
+>>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
           </folding>
         </state>
       </provider>
