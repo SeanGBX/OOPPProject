@@ -190,7 +190,10 @@ def allowance():
 @app.route("/addfood")
 @login_required
 def addfood():
-    return render_template("addfood.html")
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM foodlist")
+    data = cur.fetchall()
+    return render_template("addfood.html", data=data)
 
 @app.route("/profile/")
 @login_required

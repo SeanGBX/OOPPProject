@@ -17,7 +17,7 @@
         <div class="card" style="">
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-secondary">Username</span></h5>
-                <input type="text" name="username" tabindex="1" id="e-username" class="form-control" placeholder="{{ session.username }}">
+                <input type="text" onfocus="this.value=''" name="username" tabindex="1" id="e-username" class="form-control" placeholder="{{ session.username }}" value="{{ session.username }}">
             </div>
         </div>
     </div>
@@ -26,10 +26,10 @@
         <div class="card" style="">
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-secondary">Name</span></h5>
-                <input type="text" name="name" tabindex="2" class="form-control" placeholder="{{ session.name }}">
+                <input type="text" onfocus="this.value=''" name="name" tabindex="2" class="form-control";" placeholder="{{ session.name }}" value="{{ session.name }}">
                 <hr>
                 <h5 class="card-title"><span class="badge badge-secondary">Email</span></h5>
-                <input type="email" name="email" tabindex="3" class="form-control" placeholder="{{ session.email }}">
+                <input type="email" onfocus="this.value=''" name="email" tabindex="3" class="form-control" placeholder="{{ session.email }}" value="{{ session.email }}">
 
             </div>
         </div>
