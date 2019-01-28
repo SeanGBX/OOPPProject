@@ -3,6 +3,7 @@ from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from functools import wraps
+from currentfood import CurrentFood
 import pygal
 from pygal.style import Style
 
@@ -48,14 +49,14 @@ def overview():
     pie_chart.add({
         "title" : "Allowance left",
     },[{
-        "value": 50 - 23,
-        "xlink" : {"href": "/expenditure"}
+        "value": session["allowance"] - 23,
+        "xlink" : {"href": "/expenditure", "target":"_parent"}
     }])
     pie_chart.add({
         "title": "Spent",
     }, [{
         "value": 23,
-        "xlink": {"href": "/expenditure"}
+        "xlink": {"href": "/expenditure", "target":"_parent"}
     }])
     pie_chart.render_to_file("static/img/chart.svg")
     # Calorie Intake Pie Chart
@@ -66,20 +67,20 @@ def overview():
         "title": "Breakfast",
     }, [{
         "value": 500,
-        "xlink": {"href": "/expiration"}
+        "xlink": {"href": "/expiration", "target":"_parent"}
     }])
     pie_chart2.add({
         "title": "Lunch",
     }, [{
         "value": 700,
-        "xlink": {"href": "/expiration"}
+        "xlink": {"href": "/expiration", "target":"_parent"}
 
     }])
     pie_chart2.add({
         "title": "Dinner",
     }, [{
         "value": 1300,
-        "xlink": {"href": "/expiration"}
+        "xlink": {"href": "/expiration", "target":"_parent"}
 
     }])
     pie_chart2.render_to_file("static/img/chart2.svg")
@@ -142,8 +143,7 @@ def login():
                 session["username"] = username
                 session["name"] = name
                 session["email"] = email
-                session["allowance"] = 0
-                flash("You have been logged in!")
+                session["allowance"] = 50
                 return redirect(url_for("profile", user=username))
         else:
             app.logger.info("ERROR OCCURRED")
@@ -154,7 +154,7 @@ def login():
 @login_required
 def logout():
     session.pop("logged_in", None)
-    return redirect(url_for("overview"))
+    return redirect(url_for("home"))
 
 @app.route("/expiration")
 @login_required
@@ -166,33 +166,54 @@ def expiration():
 def setexpiration():
     return render_template("setExpiry.html")
 
-@app.route("/expenditure")
+@app.route("/expenditure", methods=('GET', 'POST'))
 @login_required
 def expenditure():
     cur = mysql.connection.cursor()
-    cur.execute("SELECT * FROM foodlist")
-    data = cur.fetchall()
+    cur.execute("SELECT * FROM currentfoodlist")
+    data2 = cur.fetchall()
+    cur.close()
+    if request.method == "POST":
+        fooditem = request.form["delfood"]
+        cur = mysql.connection.cursor()
+        cur.execute("DELETE FROM currentfoodlist WHERE id = %s", [fooditem])
+        cur.execute("ALTER TABLE currentfoodlist AUTO_INCREMENT = 1")
+        app.logger.info(fooditem)
+        return redirect(url_for("expenditure"))
 
-    return render_template("expenditure.html", data=data)
+    return render_template("expenditure.html", data2=data2)
 
 @app.route("/allowance", methods=('GET', 'POST'))
 @login_required
 def allowance():
     if request.method == "POST":
         allowance = request.form["allowance"]
-        session["allowance"] = allowance
-        return render_template("expenditure.html")
+        session["allowance"] = int(allowance)
+        return redirect(url_for("expenditure"))     
     else:
         app.logger.info("ERROR OCCURRED")
 
     return render_template("allowance.html")
 
-@app.route("/addfood")
+@app.route("/addfood", methods=('GET', 'POST'))
 @login_required
 def addfood():
     cur = mysql.connection.cursor()
     cur.execute("SELECT * FROM foodlist")
     data = cur.fetchall()
+    cur.close()
+    if request.method == "POST":
+        foodrow = request.form["addfood"]
+        mylist = foodrow.split(",")
+        app.logger.info(mylist)
+        food = mylist[0]
+        price = mylist[1]
+        calories = mylist[2]
+        foodinfo = CurrentFood(food, price, calories)
+        foodinfo.insert_food()
+        app.logger.info(foodinfo)
+        return redirect(url_for("expenditure"))
+
     return render_template("addfood.html", data=data)
 
 @app.route("/profile/")
@@ -225,12 +246,9 @@ def editprofile():
         session["email"] = email
         return render_template("profile.html", user=user1)
     else:
-        app.logger.info("NO USER")
-        error = "The account name or password that you have entered is incorrect."
+        app.logger.info("ERROR OCCURRED")
 
     return render_template("editprofile.html")
 
-
-
 if __name__ == "__main__":
-    app.run(port="80", debug=True)
+    app.run(debug=True, port="80")

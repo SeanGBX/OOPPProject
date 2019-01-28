@@ -4,3 +4,17 @@
 #expenditureblock, #calorieblock{
     padding-top: 40px;
 }
+.carousel-item.active {
+    display:block;
+}
+.carousel-control-prev{
+    width: 50%;
+    height: 100px;
+    margin-left: 200px;
+
+}
+.carousel-control-next {
+    width: 50%;
+    height: 100px;
+    margin-right: 200px;
+}

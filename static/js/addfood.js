@@ -36,3 +36,4 @@ function openQRCamera(node) {
   };
   reader.readAsDataURL(node.files[0]);
 }
+

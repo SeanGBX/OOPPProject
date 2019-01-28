@@ -19,14 +19,16 @@
         <h5 class="card-title"><span class="badge badge-secondary">Food Item</span></h5>
         <div class="card-text">
         <!-- Display food database-->
-        {% if data %}
-        {% for row in data %}
-                {{ row.food }} -
-                ${{"%.2f" % row.price }} <div class="card-text" id="calorie"> {{ row.calories }} Cal</div>
-                <hr>
+        <form method="post">
+        <ul id="myUL">
+        {% if data2 %}
+        {% for row in data2 %}
+        <li><a href="#">{{ row.food }} - ${{"%.2f" % row.price }}<div id="del"><div id="calorie"> {{ row.calories }} Cal</div><button type="submit" name="delfood" formtarget="_parent" class="btn btn-danger btn-sm" value="{{ row.id }}" style="display: inline-block; margin-bottom: 4px;"><strong>X</strong></button></div></a></li>
         {% endfor %}
         {% endif %}
-        <div class="card-text"><a href="/addfood"><img id="additem" src="../static/img/add.png">Add Item</a></div>
+        <li><div class="card-text"><a href="/addfood"><img id="additem" src="../static/img/add.png">Add Item</a></div></li>
+        </ul>
+        </form>
         </div>
     </div>
 </div>

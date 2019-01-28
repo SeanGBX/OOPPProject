@@ -3,13 +3,10 @@
 {{super()}}
 
 <link rel="stylesheet" type="text/css" href="../static/css/expenditure.css">
-<<<<<<< HEAD
-=======
 <link rel="stylesheet" type="text/css" href="../static/css/addfood.css">
 <script type="text/javascript" src="../static/js/addfood.js"></script>
 <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
 </script>
->>>>>>> c1c204892826021f329c9c3696aa0035af82f49e
 <title>Add Food</title>
 {% endblock %}
 {% block body %}
@@ -19,13 +16,15 @@
     <div class="card-body">
         <h5 class="card-title"><span class="badge badge-secondary">Food Item</span></h5>
         <input type="text" id="myInput" class=qrcode-text onkeyup="searchFood()" placeholder="Search for food.."><label class=qrcode-text-btn><input id="QRSubmit" type=file accept="image/*" capture=environment onchange="openQRCamera(this);" tabindex=-1></label>
-        {% if data %}
+        <form method="post">
         <ul id="myUL">
+        {% if data %}
         {% for row in data %}
-            <li><a href="#">{{ row.food }} - ${{"%.2f" % row.price }}<button class="btn btn-primary btn-sm" style="float: right;">Add Food </button></a></li>
+            <li><a href="#">{{ row.food }} - ${{"%.2f" % row.price }}<button type="submit" name="addfood" formtarget="_parent" class="btn btn-primary btn-sm" value="{{ row.food }},{{ row.price }},{{ row.calories }}" style="float: right;">Add Food</button></a></li>
         {% endfor %}
-        </ul>
         {% endif %}
+        </ul>
+        </form>
     </div>
 </div>
 {% endblock %}

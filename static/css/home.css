@@ -1,3 +1,18 @@
 .header{
-    padding-top: 60px;
+    padding-top: 100px;
+}
+.btn.btn-primary{
+    padding: 10px 20px 10px 20px ;
+}
+.row{
+    justify-content: center;
+}
+
+@media screen and (max-width:1199px){
+    #hometext{
+        width:100%;
+    }
+    .device-container{
+        width:100%;
+    }
 }

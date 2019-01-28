@@ -34,12 +34,14 @@
 }
 .qrcode-text-btn {
     display:inline-block;
-    background:url("../img/qrcode.png") 50% 50% no-repeat;
-    height:27px;
+    background:url("../img/qrcode.png");
+    background-position: center;
+    height:30px;
     width:1.7em;
-    margin-left:-1.7em;
-    margin-top: 8px;
+    margin-left:-42px;
+    padding-left: 20px;
     cursor:pointer;
+    vertical-align: middle;
 }
 .qrcode-text-btn > input[type=file] {
     position:absolute;
