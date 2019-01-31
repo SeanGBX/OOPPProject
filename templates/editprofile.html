@@ -2,40 +2,35 @@
 {% block head %}
 {{super()}}
 <link rel="stylesheet" type="text/css" href="../static/css/profile.css">
+<script type="text/javascript" src="../static/js/editprofile.js"></script>
 {% endblock %}
 {% block body %}
 
 <h1>
     <span class="badge badge-secondary">Profile</span>
-
 </h1>
 
 <!-- Form area -->
 <form id="editprofileform" action="" method="post">
-    <div class="container" id="Area1" style="float: left;width: 50%;">
-        <img src="../static/img/profilepic.png" style=";border:4px solid grey ;margin-bottom: 10px;margin-left: 200px;">
-        <div class="card" style="">
+    <div class="container" id="Area1" style="text-align: center">
+        <img src="../static/img/profilepic.png" style=";border:4px solid grey ;text-align: center; margin-bottom: 10px;">
+        <div class="card">
             <div class="card-body">
                 <h5 class="card-title"><span class="badge badge-secondary">Username</span></h5>
-                <input type="text" onfocus="this.value=''" name="username" tabindex="1" id="e-username" class="form-control" placeholder="{{ session.username }}" value="{{ session.username }}">
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="Area2" style="float:right;width: 50%;">
-        <div class="card" style="">
-            <div class="card-body">
+                <input type="text" onfocus="this.value=''" onblur="emptyfield()" name="username" tabindex="1" id="e-username" class="form-control" placeholder="{{ username }}" value="{{ username }}">
+                <hr>
                 <h5 class="card-title"><span class="badge badge-secondary">Name</span></h5>
-                <input type="text" onfocus="this.value=''" name="name" tabindex="2" class="form-control";" placeholder="{{ session.name }}" value="{{ session.name }}">
+                <input type="text" onfocus="this.value=''" onblur="emptyfield()" name="name" tabindex="2" id="e-name" class="form-control" placeholder="{{ name }}" value="{{ name }}">
                 <hr>
                 <h5 class="card-title"><span class="badge badge-secondary">Email</span></h5>
-                <input type="email" onfocus="this.value=''" name="email" tabindex="3" class="form-control" placeholder="{{ session.email }}" value="{{ session.email }}">
-
+                <input type="email" onfocus="this.value=''" onblur="emptyfield()" name="email" tabindex="3" id="e-email" class="form-control" placeholder="{{ email }}" value="{{ email }}">
             </div>
         </div>
+        <div style="margin-top: 10px; text-align: center;">
+            <a class="btn btn-danger" href="/profile" >Cancel</a>
+            <input form="editprofileform" onclick="emptyfield()" name="register-submit" type="submit" class="btn btn-success" style="margin-left: 34px;">
+        </div>
     </div>
-    <input form="editprofileform" name="register-submit" type="submit" class="btn btn-success" style="float: right;margin-right: 40px;">
-    <a class="btn btn-danger" href="/profile" style="float: right;margin-right: 20px;">Cancel</a>
 </form>
 
 {% endblock %}

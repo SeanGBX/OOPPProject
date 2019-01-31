@@ -1,23 +1,9 @@
-#heading1{
-    margin-left: 28%;
-    width:45%;
-    border: 1px solid white;
-    background-color: darkgrey;
-    color:white;
-    padding-top: 20px;
-    padding-right: 0px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    border-radius: 15px;
-    text-align:center;
-}
-
 #todoForm2{
     margin-left:40%;
 }
 
 input{
-     width:20%;
+    width:20%;
     border-radius: 5px;
     background-color: cornsilk;
     padding: 4px 10px;
@@ -28,8 +14,8 @@ input{
 }
 
 #itemRemark{
-    width:30.3%;
-    margin-left: 1.9%;
+    width:30%;
+    margin-left: 2.0%;
 }
 
 #expiryDay{
@@ -43,10 +29,12 @@ input{
 }
 
 #expiryYear{
-    margin-left: 5.15%;
-    width:30.3%;
+    margin-left: 5.3%;
+    width:30.4%;
 }
-
+#button1:hover{
+    color: white;
+}
 #button1{
     margin-left: 25%;
     font-size:100%;
@@ -56,4 +44,10 @@ input{
     padding: 2px 8px;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+#register-submit{
+    background-color:darkgrey;
+}
+#register-submit:hover{
+    color: white;
 }

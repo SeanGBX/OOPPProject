@@ -1,98 +1,47 @@
 {% extends "layouts.html" %}
 {% block head %}
     {{ super() }}
-
     <link rel="stylesheet" type = "text/css" href="../static/css/expiration.css">
+    <script type="text/javascript" src="../static/js/expiration.js"></script>
     <title>Expiration</title>
 {% endblock %}
 {% block body %}
-<h1 id="heading1">Your Food Inventory</h1>
+{% from "includes/_formhelpers.html" import render_field %}
+<h1>
+    <span class="badge badge-secondary">Your Food Inventory</span>
+</h1>
 <div class="card" id="card1">
     <div class="card-body">
         <h5 class="card-title"><span class="badge badge-secondary">Food Item</span></h5>
-        <div class="card-text">Milk - Expires in 5 days </div>
-        <hr>
-        <ul id="todoList1">
+        <form id="DelItemForm" action="" method="post">
+        <ul id="myUL">
+            {% for item in foodexp %}
+            {% if item.expiry > 2 %}
+                <li><a href="#">{{ item.name }} - Expires in {{ item.expiry }} days<div class="editdel"><button id ="editbtn" type="submit" name="editfood" formtarget="_parent" class="btn btn-primary btn-sm" value={{ item.id }} >Edit Food</button><button id="delbtn" type="submit" name="delfood" formtarget="_parent" class="btn btn-danger btn-sm" value="{{ item.id }}"><strong>X</strong></button></div></a></li>
+            {% endif %}
+            {% endfor %}
+            <li><div class="card-text"><a href="/addfood"><img id="additem" src="../static/img/add.png">Add Item</a></div></li>
         </ul>
-        <ul id="todoList2">
-        </ul>
-        <div class="card-text"><a href="/addfood"><img id="additem" src="../static/img/add.png">Add Item</a></div>
+        </form>
     </div>
 </div>
-<button type="button" id="button2" onclick="show()">New</button>
-        <br>
-        <form id="todoForm" style="display: none">
-            New item's name:<br>
-            <input id="todoInput1"><br>
-            New item's Expiring timing (days):<br>
-            <input id="todoInput2"><br><br>
 
-            <button type="button" id="button1" onclick="addItem()">Add Item</button>
-        </form>
-        <br>
-        <a href="/setexpiration" id="setExpiry" style="text-decoration: none">Detailed input</a>
-<h1 id="heading2">Expiring</h1>
+<h1>
+    <span class="badge badge-secondary">Expiring Food</span>
+
+</h1>
 <div class="card" id="card2">
     <div class="card-body">
-        <ul id="todoList3">
-
+    <form id="DelItemForm" action="" method="post">
+        <ul id="myUL">
+            {% for item in foodexp %}
+            {% if -1 < item.expiry <= 2 %}
+                <li><a href="#"><div id = "del">{{ item.name }} - Expires in {{ item.expiry }} days<div class="editdel"><button id ="editbtn" type="submit" name="editfood" formtarget="_parent" class="btn btn-primary btn-sm" value="{{ item.id }}" >Edit Food</button><button id="delbtn" type="submit" name="delfood" formtarget="_parent" class="btn btn-danger btn-sm" value="{{ item.id }}"><strong>X</strong></button></div></div></a></li>
+            {% endif %}
+            {% endfor %}
         </ul>
-        <button type="button" id="button3" onclick="expiring();">Refresh</button>
+    </form>
     </div>
 </div>
-
-
-
-<script>
-    function addItem() {
-        var item = document.getElementById("todoInput1").value;
-        var text1 = document.createTextNode(item);
-        var time = document.getElementById("todoInput2").value;
-        var text2 = document.createTextNode(time);
-        var newItem1 = document.createElement("li");
-        var newItem2 = document.createElement("li");
-        newItem1.appendChild(text1);
-        newItem2.appendChild(text2);
-        document.getElementById("todoList1").appendChild(newItem1);
-        document.getElementById("todoList2").appendChild(newItem2);
-        alert("Add items completed");
-    }
-
-    function show() {
-        document.getElementById("todoForm").style.display = "block";
-        document.getElementById("button2").innerHTML = "";
-        document.getElementById("button2").style.color = "white";
-    }
-
-    function expiring() {
-        var timing = document.getElementById("todoList2");
-        var timings = timing.getElementsByTagName("li");
-        var name = document.getElementById("todoList1");
-        var names = name.getElementsByTagName("li");
-        var i;
-        for (i = 0; i < timings.length; i++) {
-            var item = timings[i].innerHTML;
-            var item1 = parseInt(item);
-            if (1 >= item1) {
-                var item2 = names[i].innerHTML;
-                console.log(item2);
-                var text = document.createTextNode(item2);
-                var newItem = document.createElement("li");
-                newItem.appendChild(text);
-                document.getElementById("todoList3").appendChild(newItem);
-                document.getElementById("button3").innerHTML = "";
-                document.getElementById("button3").style.color = "white";
-            }
-        }
-    }
-
-    function showButton() {
-        document.getElementById("button3").innerHTML = "Refresh";
-    }
-</script>
 {% endblock %}
-<!---
-    <br>
 
-
--->

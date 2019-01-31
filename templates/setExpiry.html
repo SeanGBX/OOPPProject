@@ -1,44 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+{% extends "layouts.html" %}
+{% block head %}
+    {{ super() }}
     <link rel="stylesheet" type = "text/css" href="../static/css/setExpiry.css">
-    <title>Title</title>
-</head>
-<body>
-<h1 id = "heading1">Set Expiry Date</h1>
+    <script type="text/javascript" src="../static/js/setExpiry.js"></script>
+    <title>Expiration</title>
+{% endblock %}
+{% block body %}
+{% from "includes/_formhelpers.html" import render_field %}
+<h1>
+    <span class="badge badge-secondary">Edit Expiration</span>
+</h1>
 <form id = "todoForm2">
     Item name: <input type = "text" id = "itemName"><br>
-    Remarks: <input type = "text" id = "itemRemark"><br>
 
 <h2 id = "heading2">Set date of expiry</h2>
 
     dd: <input type = "text" id = "expiryDay"><br>
     mm: <input type = "text" id = "expiryMonth"><br>
     yyyy: <input type = "text" id = "expiryYear"><br>
-    <button type = "button" id = "button1" oncllick = "">Save Changes</button>
+    <button type = "button" id = "button1" onclick = "saveChanges()">Generate</button>
 </form>
-
-<script>
-    function saveChanges(){
-        var date1 = document.getElementById("expiryDay").innerHTML;
-        var month1 = document.getElementById("expiryMonth").innerHTML;
-        var year1 = document.getElementById("expiryYear").innerHTML;
-        var currentYear = new Date();
-        currentYear.getFullYear();
-        var currentMonth = new Date();
-        currentMonth.getMonth();
-        var currentDay = new Date();
-        currentDay.getDate();
-        console.log(currentYear, currentDay, currentMonth);
-        if (year1 >= currentYear){
-            var yearDifference = year1 - currentYear
-            if (month1 >= currentMonth){
-                var monthDifference = month1 - currentMonth
-                
-            }
-        }
-    }
-</script>
-</body>
-</html>
+    <form id="AddItemForm" action="" method="post"
+          role="form">
+        <div class="form-group">
+            {{ render_field(form.name, id = "todoInput1", class_="form-control", placeholder="Name") }}
+        </div>
+        <div class="form-group">
+            {{ render_field(form.time, id = "todoInput2", class_="form-control", placeholder="time") }}
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col"><br>
+                    <input type="submit" name="add" id="register-submit" onclick="sure()"
+                           tabindex="4" class="form-control btn btn-register"
+                           value="Save changes">
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

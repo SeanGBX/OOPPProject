@@ -4,35 +4,37 @@
     <link rel="stylesheet" type="text/css" href="../static/css/overview.css">
     <title>Overview</title>
 {% endblock %}
-{% block body %}}
-    <h1>Overview</h1>
+{% block body %}
+    <h1>
+        <span class="badge badge-secondary">Overview</span>
+    </h1>
     <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner text-center" role="listbox">
             <div class="carousel-item text-center active">
                 <h3 style="text-align: center;">daily</h3>
                 <div class="container" id="expenditureblock" align="center">
-                    <embed type="image/svg+xml" src="static/img/chart.svg" id="expenditure">
+                    <embed type="image/svg+xml" src="{{ img_url1 }}" id="expenditure">
                 </div>
                 <div class="container" id="calorieblock" align="center">
-                    <embed type="image/svg+xml" src="static/img/chart2.svg" id="calorie">
+                    <embed type="image/svg+xml" src="{{ img_url4 }}" id="calorie">
                 </div>
             </div>
             <div class="carousel-item text-center">
                 <h3 style="text-align: center;">weekly</h3>
                 <div class="container" id="expenditureblock" align="center">
-                    <embed type="image/svg+xml" src="static/img/chart.svg" id="expenditure">
+                    <embed type="image/svg+xml" src="{{ img_url2 }}" id="expenditure">
                 </div>
                 <div class="container" id="calorieblock" align="center">
-                    <embed type="image/svg+xml" src="static/img/chart2.svg" id="calorie">
+                    <embed type="image/svg+xml" src="{{ img_url4 }}" id="calorie">
                 </div>
             </div>
             <div class="carousel-item text-center">
                 <h3 style="text-align: center;">monthly</h3>
                 <div class="container" id="expenditureblock" align="center">
-                    <embed type="image/svg+xml" src="static/img/chart.svg" id="expenditure">
+                    <embed type="image/svg+xml" src="{{ img_url3 }}" id="expenditure">
                 </div>
                 <div class="container" id="calorieblock" align="center">
-                    <embed type="image/svg+xml" src="static/img/chart2.svg" id="calorie">
+                    <embed type="image/svg+xml" src="{{ img_url4 }}" id="calorie">
                 </div>
             </div>
         </div>

@@ -29,6 +29,7 @@ class CurrentFood:
         connection = MySQLdb.connect(host ='localhost',user = 'root', password = '123admin123',db = 'registerdb')
         cur = connection.cursor()
         cur.execute("INSERT INTO currentfoodlist(food, price, calories) VALUES(%s, %s, %s)", (self.get_food(), self.get_price(), self.get_calories()))
+        cur.execute("INSERT INTO items(name,expiry) VALUES(%s,%s)", (self.get_food(),0))
         connection.commit()
         connection.close()
 
